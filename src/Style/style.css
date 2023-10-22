@@ -1,0 +1,264 @@
+/* NAVBAR   */
+.intro{
+    background: rgba(0, 0, 0, 0.893);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.navbar{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font2);
+    font-size: 25px;
+}
+.navleft{
+    display: flex;
+    list-style: none;
+    font-family: var(--font1);
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: -1px 0 0 rgba(0, 0, 0, .2); 
+}
+.navleft li{
+    padding: 0 5px;
+}
+.navright{
+    display: flex;
+}
+.navright li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 35px;
+}
+.navright li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navright li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:rgb(211, 27, 27) ;
+    left: 0;
+    position: absolute;
+    bottom: -8px;
+    transition: all 0.3s ease-in-out;
+}
+.navright li a:hover::after{
+    width: 100%;
+}
+
+
+/* ABOUT */
+.about{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+.aboutLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11%;
+}
+.aboutRight{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.aboutLeft p{
+    padding: 15px;
+    font-size: 30px;
+    font-family: var(--font2);
+}
+.aboutLeft h1{
+    font-size: 65px;
+    font-family: var(--font3);
+}
+.hi{
+    animation: hi 0.08s linear 10;
+}
+@keyframes hi{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.aboutLeft h1 span{
+    color:  #ff004f;
+    /* text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16,16,16,.4), 1px 22px 10px rgba(16,16,16,.2), 1px 25px 35px rgba(16,16,16,.2), 1px 30px 60px rgba(16,16,16,.4); */
+}
+.aboutRight img{
+    height: 550px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Info */
+.info{
+    display: flex;
+    margin: auto;
+    /* border: 2px solid red; */
+    color: black;
+
+}
+
+.infoLeft h1{
+
+padding: 25px 0;
+}
+.infoLeft p{
+    font-size: 25px;
+    font-family: var(--font2);
+}
+.infoLeft{
+    width: 50%;
+}
+.infoRight{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoRight button{
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--font2);
+    background-color: rgba(137, 43, 226, 0.77);
+    color: white;
+    text-align: center;
+}
+.infoRight button:hover{
+    background-color: rgba(137, 43, 226, 0.693);
+}
+
+/* My skills */
+.hr{
+    height: 45px;
+    margin: auto;
+    margin-top: 45px;
+    opacity: 0.4;
+    width: 85%;
+    text-align: center;
+}
+.myskills{
+    color: black;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.myskillsLeft{
+    display: flex;
+    padding: 15px 0;
+}
+.myskillsRight div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+.links p{
+    position: relative;
+    cursor: pointer;
+}
+.myskillsRight p{
+    font-size: 25px;
+    font-family: var(--font2);
+    padding: 8px 0;
+}
+.myskillsRight p span{
+    position: relative;
+}
+.myskillsRight p span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    position: absolute;
+    background:black;
+    transition: all 0.5s ease-in-out;
+}
+.links p:hover::after{
+    width: 100%;
+}
+
+/* Projects */
+.projects{
+    color: black;
+    margin: auto;
+}
+.projects p{
+    font-size: 25px;
+    font-family: var(--font2);
+    padding: 10px;
+}
+
+/* Contact */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+}
+.contactLeft{
+    color: black;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    font-family: var(--font2);
+}
+.contactRight{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items:end;
+    text-align: right;
+    width: 50%;
+}
+.contact p{
+    font-size: 25px;
+    margin: 8px;
+    cursor: pointer;
+
+}
+
+/* Foot */
+
+.foot{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    padding: 15px 0;
+    font-family: var(--font2);
+    font-size: 20px;
+}
