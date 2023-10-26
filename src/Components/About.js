@@ -1,21 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../Style/style.css"
 import "../Style/utils.css"
+import "../Style/responsive.css"
+import cpp from "../Images/cpp.png"
+import py from "../Images/py.png"
+import java from "../Images/java.png"
+import html from "../Images/html.png"
+import css from "../Images/css.png"
+import js from "../Images/js.png"
+import react from "../Images/react.png"
+import bs from "../Images/bs.png"
+import resume from "../Images/RESUME.pdf"
 
-export default function About() {
+export default function About(props) {
   return (
     <>
-   
-    <div className="info mw3">
-      <div className="infoLeft">
+      
+    <div className="info mw3" name="about">
+      <div className="infoLeft" >
        <h1 className='heading'>👨‍🎓About Me</h1>
-       <p> Hello I am Akash Mahendrakar , currently a 3rd year student in Vellore Institute of Technology, Chennai.I have been interested in technology and computers.Hence , I am currently pursuing this interest as a Computer Science Student</p>
+       <p> Hello I am <span className='splColor'>Akash Mahendrakar</span> , currently a 3rd year student in <span className='splColor'>Vellore Institute of Technology</span> , <span className='splColor'> Chennai</span> .I have been interested in technology and computers.Hence , I am currently pursuing this interest as a Computer Science Student.</p>
        <p style={{marginTop:"20px"}}>
-        I am good at Frontend Development, DSA and Experienced in Web development
+        I am good at <span className='splColor'>Frontend Development</span> , <span className='splColor'>DSA</span> and Experienced in <span className='splColor'>Web Development</span>
        </p>
       </div>
       <div className="infoRight">
-        <button>Download CV</button>
+        
+        <a href={resume} download ><button>Download CV</button></a>
       </div>
     </div>
     <div className="hr mw3">
@@ -26,36 +38,64 @@ export default function About() {
         <h1 className='heading'>My Skills</h1>
       </div>
       <div className="myskillsRight">
-      <p><span>Languages:</span>C++, C, Java , Python , Also familiar with: SQL</p>
-      <p> <span>Web Technologies:</span>  HTML, CSS ,Java Script ,React</p> 
-<p><span>Skills:</span> Data Structures, Algorithms</p>
-<p><span>Core Subjects:</span> Operating System, Data Structures and Algorithms, DBMS, OOP</p>
+        <div className="links">
+              <div className="tab-links linksLeft">
+                      <p id='tlink1' className="tlink activeLink"  onClick={()=>props.onclick("lang")}>LANGUAGES</p>
+                      <p id='tlink2' className='tlink'  onClick={()=>props.onclick("front")} >FRONTEND</p>
+                      <p id='tlink3' className='tlink'  onClick={()=>props.onclick("back")} >BACKEND</p>
+                      <p id='tlink4' className='tlink'  onClick={()=>props.onclick("dsa")} >DSA</p>
+              </div>
+              <div className='linksRight' onClick={onclick} id='lang'>
+                    <div className='img'>
+                    <img className='im1' src={cpp} alt="" /> <br />
+                    C++
+                    </div>
+                    <div className='img'>
+                    <img className='im1' src={py} alt="" />  <br />
+                    Python
+                    </div  >
+                    <div className='img'>
+                    <img className='im1' src={java} alt="" />  <br />
+                    Java
+                    </div>
+              </div>
+            <div className='linksRight none '  onClick={onclick} id='front'>
+                    <div className='img'>
+                    <img className='im1' src={html} alt="" />  <br />
+                    HLML
+                    </div>
+                    <div className='img'>
+                    <img className='im1' src={css} alt="" />  <br />
+                    CSS
+                    </div  >
+                    <div className='img'>
+                    <img className='im1' src={js} alt="" />  <br />
+                    Java Script
+                    </div>
+                    <div className='img'>
+                    <img className='im1' src={bs} alt="" />  <br />
+                    Bootstrap
+                    </div>
+                    <div className='img'>
+                    <img className='im1' src={react} alt="" />  <br />
+                    React JS
+                    </div>
+             </div>
+            <div className='linksRight none '  onClick={onclick} id='back'>
+                    
+             </div>
+            <div className='linksRight none   'onClick={onclick}  id='dsa'>
+                    <div className='img'>
+                    <img className='im1' src={cpp} alt="" />  <br />
+                    C++
+                    </div>
+             </div>
+            
+
+        </div>
       </div>
     </div>
-    <div className="hr mw3">
-      <hr />
-    </div>
-    <div className="projects mw3">
-    <h1 className='heading'>💻Projects</h1>
-    <p>
-  <b> BLOG - TEMPLATE (Fully RESPONSIVE Blog Using HTML & CSS) </b> <br />
- The project involved the development of a website using HTML and CSS, which incorporated 
-advanced CSS features such as hovers, transitions . It is a fully Responsive Website. The 
-project demonstrated a strong command of web development technologies and an ability to 
-create engaging user experiences.</p>
-<p>
-<b>Tic Tac Toe (FULLY RESPONSIVE Using HTML , CSS & JavaScript) </b> <br />
- The project involved the development of a website using HTML , CSS & JS, which incorporated 
-advanced CSS features such as hovers , transitions and animations. The website also included
-several essential features, included animations using JavaScript and making it a fully functional & 
-fully Responsive presence. The project demonstrated a strong command of web development 
-technologies and an ability to create engaging user experiences.
-    </p>
-    <p><a href="">View All</a></p>
-    </div>
-    <div className="hr mw3">
-      <hr />
-    </div>
+    
     </>
   )
 }
