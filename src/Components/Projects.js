@@ -17,7 +17,7 @@ export default function Projects() {
     </div>
     <div className="mw3 projects">
         <div className="projectsLeft">
-        <h1 className='heading'>Projects&nbsp;<i className="fa-solid fa-diagram-project"></i></h1>
+        <h1 className='heading'>Projects&nbsp;💻</h1>
         </div>
     <div className="projectsRight">
         
@@ -29,7 +29,7 @@ export default function Projects() {
                 <p style={{textAlign:'left'}}> <b>Tech Used : </b></p>
                 <div className='pbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs " style={{height:"20px"}}></i></h1></a>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ export default function Projects() {
                 <p style={{textAlign:'left'}}> <b>Tech Used : </b></p>
                 <div className='pbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs"></i></h1></a>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ export default function Projects() {
                 <p style={{textAlign:'left'}}> <b>Tech Used : </b></p>
                 <div className='pbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs"></i></h1></a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@ export default function Projects() {
                 <p style={{textAlign:'left'}}> <b>Tech Used : </b></p>
                 <div className='pbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs"></i></h1></a>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@ export default function Projects() {
                 <p style={{textAlign:'left'}}> <b>Tech Used : </b></p>
                 <div className='pbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs"></i></h1></a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@ export default function Projects() {
               
                 <div className='pbtns lpbtns'>
                    <a href=""> <button>Go to Website &nbsp; <i className="fa-solid fa-link"></i></button></a> 
-                    <a href=""><h1><i className="fa-brands fa-github"></i></h1></a>
+                    <a href=""><h1><i className="fa-brands fa-github fa-2xs"></i></h1></a>
                 </div>
             </div>
         </div>

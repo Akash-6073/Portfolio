@@ -21,7 +21,7 @@ export default function About(props) {
       <div className="infoLeft" >
        <h1 className='heading'>👨‍🎓About Me</h1>
        <p> Hello I am <span className='splColor'>Akash Mahendrakar</span> , currently a 3rd year student in <span className='splColor'>Vellore Institute of Technology</span> , <span className='splColor'> Chennai</span> .I have been interested in technology and computers.Hence , I am currently pursuing this interest as a Computer Science Student.</p>
-       <p style={{marginTop:"20px"}}>
+       <p style={{marginTop:"3%"}}>
         I am good at <span className='splColor'>Frontend Development</span> , <span className='splColor'>DSA</span> and Experienced in <span className='splColor'>Web Development</span>
        </p>
       </div>
@@ -35,7 +35,7 @@ export default function About(props) {
     </div>
     <div className="mw3 myskills">
       <div className="myskillsLeft">
-        <h1 className='heading'>My Skills</h1>
+        <h1 className='heading'>My Skills💪 </h1>
       </div>
       <div className="myskillsRight">
         <div className="links">
@@ -58,6 +58,11 @@ export default function About(props) {
                     <img className='im1' src={java} alt="" />  <br />
                     Java
                     </div>
+                    <div className='img'>
+                    <img className='im1' src={js} alt="" />  <br />
+                    Java Script
+                    </div>
+                  
               </div>
             <div className='linksRight none '  onClick={onclick} id='front'>
                     <div className='img'>

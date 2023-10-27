@@ -48,6 +48,7 @@
         width: 100%;
         justify-content: center;
         z-index: 1;
+    height: 575px;
     }
     .aboutRight{
         opacity: 0.4;
@@ -153,7 +154,6 @@
     transition: all 0.5s ease-in-out;
 }
 .aboutLeft{
-    margin-top: 20%;
 }
 .aboutLeft p{
     font-size: 25px;
@@ -183,6 +183,11 @@
     }
   
 }
+@media screen and ( max-width:600px) {
+    .last img{
+        padding: 80px;
+       }
+}
 @media screen and (max-width:500px) {
     .titleLeft{
         font-size: 20px;
@@ -201,12 +206,29 @@
     .im1{
         height: 70px;
     }
+    .infoLeft p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .infoRight button{
+        font-size: 15px;
+    }
+    .img{
+        font-size: 17px;
+    }
+    .designs span{
+        font-size: 30px;
+    }
+    .designs h3{
+        font-size: 20px;
+    }
+    .designs p{
+        font-size: 15px;
+    }
 
 }
 @media screen and (max-width:400px) {
-    .aboutLeft{
-        margin-top: 50%;
-    }
+     
     .contactLeft p{
         font-size: 18px;
     }
@@ -216,6 +238,7 @@
     .im1{
         padding: 0 40px;
     }
+    
 }
 @media screen and (max-width:340px) {
     .titleLeft {
@@ -258,5 +281,8 @@
     }
     .im1{
         padding: 0 10px;
+    }
+    .aboutLeft{
+        height: 400px;
     }
 }
