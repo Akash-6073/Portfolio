@@ -83,7 +83,9 @@ export default function Projects() {
         </div>
         <div className="box last">
         <h3>View all on my GitHub</h3>
-        <img src={gh} alt="" />
+        <div className="icon">
+        <i class="fa-brands fa-square-github"></i>
+        </div>
 
             <div className="content">
               
