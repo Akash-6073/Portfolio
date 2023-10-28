@@ -11,6 +11,10 @@ import css from "../Images/css.png"
 import js from "../Images/js.png"
 import react from "../Images/react.png"
 import bs from "../Images/bs.png"
+import mongodb from "../Images/mongodb.png"
+import node from "../Images/node.png"
+import express from "../Images/express.png"
+
 import resume from "../Images/RESUME.pdf"
 
 export default function About(props) {
@@ -85,9 +89,21 @@ export default function About(props) {
                     <img className='im1' src={react} alt="" />  <br />
                     React JS
                     </div>
+                   
              </div>
             <div className='linksRight none '  onClick={onclick} id='back'>
-                    
+                  <div className='img '>
+                      <img className='  imgdif' src={mongodb} alt="" />  <br />
+                       Mongo DB
+                  </div>
+                  {/* <div className='img '>
+                      <img className='  imgdif' src={express} alt="" />  <br />
+                       Express JS
+                  </div>
+                  <div className='img '>
+                      <img className='imgdif' src={node} alt="" />  <br />
+                       Node JS
+                  </div> */}
              </div>
             <div className='linksRight none   'onClick={onclick}  id='dsa'>
                     <div className='img'>

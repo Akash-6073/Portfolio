@@ -40,6 +40,8 @@
     z-index: 2;
     font-family: var(--font2);
     font-weight: bold;
+
+    
 }
  
 .navbar{
@@ -49,7 +51,7 @@
     align-items: center;
     font-family: var(--font2);
     font-size: 25px;
-    max-width: 1300px;
+    max-width: 1400px;
 }
  
 .nsl{
@@ -108,7 +110,7 @@
     margin: auto;
     margin-top: 2%;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1350px;
 }
 .aboutLeft{
     width: 50%;
@@ -132,24 +134,11 @@
     font-family: var(--font3);
 }
 .hi{
-    animation: hi 0.08s linear 10;
+    animation: swing ease-in-out 1s infinite 
 }
-@keyframes hi{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(-2px);
-    }
-    50%{
-        transform: translateX(0);
-    }
-    75%{
-        transform: translateX(2px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
 }
 .aboutLeft h1 span{
     color:  #ff004f;
@@ -246,6 +235,7 @@ margin-bottom: 10px;
     font-family: var(--font2);
     font-weight: bold;
     background-color: rgba(128, 128, 128, 0.125);
+
 }
 .tlink:active{
     /* background-color: grey; */
@@ -278,6 +268,7 @@ margin-bottom: 10px;
     margin: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .im{
@@ -287,7 +278,13 @@ margin-bottom: 10px;
 .im1{
     height:120px;
     transition: all 0.5s ease-in-out;
-    padding: 0 60px;
+    padding: 0 75px;
+    animation: anim 1s ease 1;
+}
+.imgdif{
+    height:70px;
+    transition: all 0.5s ease-in-out;
+    padding: 0 75px;
     animation: anim 1s ease 1;
 }
 @keyframes anim {
@@ -347,7 +344,16 @@ margin-bottom: 10px;
     /* background:linear-gradient(90deg,rgba(128, 128, 128, 0.12),white,rgba(128, 128, 128, 0.12)); */
     /* background-color: rgba(128, 128, 128, 0.305); */
     border-radius: 5px;
-    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.5), 0px 98px 20px 0 rgba(0, 0, 0, 0.0);
+    /* box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.5), 0px 98px 20px 0 rgba(0, 0, 0, 0.0); */
+    /* background-image: linear-gradient(to right, #ff9966, #ff004f);  */
+    /* background-image: linear-gradient(to right, #b6fbff, #83a4d4); */
+    background-image: linear-gradient(to right, #d3cce3, #e9e4f0); 
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%); */
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
 
 
 }
@@ -362,11 +368,15 @@ margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 6px;
     transition: background 0.5s , transform 0.2s;
+    
+    
 }
 .box:hover{
     transform: translateY(-25px);
     /* animation: swinging 0.4s linear 1;
     transform-origin: 50%; */
+ 
+    
 
 }
 /* @keyframes swinging{
@@ -553,13 +563,13 @@ margin-bottom: 10px;
     text-decoration: none;
     color: black;
     /* color: white; */
+    
     margin-right:5px;
     padding: 5px 8px;
     border-radius: 50%;
     transition:background 0.5s ,transform 0.5s;
  }
  .contactMedia a:hover{
-    background-color: rgba(128, 128, 128, 0.165);
     
     /* background-color: #ff004f; */
     /* color: white; */
@@ -591,8 +601,7 @@ font-size: 25px;
     padding: 10px;
     margin: 15px;
     width: 90%;
-    background-color: #ff004f;
-    background-color: rgba(128, 128, 128, 0.681);
+    /* background-color: #ff004f; */
     color: black;
     color: white;
     border-radius: 4px;
@@ -625,10 +634,14 @@ font-size: 25px;
 .contactRight form button:hover{
     background-color: #ff0051cf ;
 }
-.contactLeft.thanks{
-    font-size: 30px;
+.thanks{
+    animation: blink 2.4s ease infinite  ;
 }
-
+@keyframes blink{
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+    }
 /* FOOTER */
 .footer{
     margin: auto;
@@ -641,6 +654,7 @@ font-size: 25px;
     text-shadow: -1px 0 0 rgba(0, 0, 0, .2); 
 
 }
+
 
 
 
